@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace MoviNa.Models
 {
@@ -9,5 +10,8 @@ namespace MoviNa.Models
         public string Logo { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+
+        // Relationships in different table
+        public List<Movie> Movies { get; set; }
     }
 }
