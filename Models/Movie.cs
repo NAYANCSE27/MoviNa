@@ -29,7 +29,7 @@ namespace MoviNa.Models
 
         // Producer relation
         public int ProducerId { get; set; }
-        [ForeignKey("ProducerId")]
+        [NotMapped]
         public Cinema Producer { get; set; }
     }
 }
