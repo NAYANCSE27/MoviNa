@@ -13,5 +13,6 @@ namespace MoviNa.Models
 
         // Relationships in different sector of database
         public List<Movie> Movies { get; set; }
+        public string FullName { get; internal set; }
     }
 }
